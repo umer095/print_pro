@@ -36,16 +36,14 @@ const stats = [
   },
 ];
 
-// 1️⃣ Status type (exact values jo UI + data me use ho rahi hain)
 
 
-// 2️⃣ Status → Tailwind class mapping
 export const statusStyles: Record<StatusType, string> = {
   Approved: "bg-green-100 text-green-700",
   "Pending Approval": "bg-[#FFEDD4] text-orange-700",
 };
 
-// 3️⃣ Purchase Order type
+
 export type PurchaseOrder = {
   pr: string;
   date: string;

@@ -1,0 +1,51 @@
+# Node
+node_modules/
+dist/
+logs/
+.env
+
+# --- OS & Editors ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# --- Node.js (Frontend & Backend) ---
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# --- Frontend Specific ---
+frontend/dist/
+frontend/build/
+frontend/.env
+frontend/.env.local
+
+# --- Backend Specific ---
+services/backend/dist/
+services/backend/coverage/
+services/backend/.env
+
+# --- Python (Print Engine) ---
+services/print-engine/venv/
+services/print-engine/env/
+services/print-engine/__pycache__/
+*.pyc
+services/print-engine/.env
+
+# --- Generated Static Outputs (IMPORTANT) ---
+services/print-engine/static/outputs/*
+!services/print-engine/static/outputs/.gitkeep
+
+# --- Backend Uploads ---
+services/backend/uploads/*
+!services/backend/uploads/.gitkeep
+
+# --- Custom Templates ---
+services/print-engine/static/custom_templates/*
+!services/print-engine/static/custom_templates/.gitkeep
+
+# --- Database ---
+*.sqlite
+*.db
